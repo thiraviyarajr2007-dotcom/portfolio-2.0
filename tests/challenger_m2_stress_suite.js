@@ -1045,9 +1045,9 @@ test('3.4: EMPIRICAL CHALLENGE — Keyboard Focus Trap Escapes via navToggle Tab
     console.log('    [DEFECT CONFIRMED] Tab forward on navToggle fails to trap focus; focus leaks into page content behind modal drawer!');
   }
 
-  // Verify that the focus trap leaks
-  assert.strictEqual(shiftTabPrevented, false, 'Focus trap defect verified: Shift+Tab on Home is not prevented');
-  assert.strictEqual(tabFromNavTogglePrevented, false, 'Focus trap defect verified: Tab on navToggle is not prevented');
+  // Verify that the focus trap prevents focus leakage
+  assert.strictEqual(shiftTabPrevented, true, 'Focus trap verified: Shift+Tab on Home is prevented and kept in drawer');
+  assert.strictEqual(tabFromNavTogglePrevented, true, 'Focus trap verified: Tab on navToggle is prevented and kept in drawer');
 });
 
 // ============================================================================
