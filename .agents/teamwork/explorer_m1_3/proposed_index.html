@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Thiraviaraj R | AI/ML Engineer &amp; Full-Stack Builder</title>
+  <meta name="description" content="Portfolio of Thiraviaraj R — 2nd-year B.E. CSE (AI &amp; ML) student at Rathinam Technical Campus (CGPA 9.46), CEH certified. Building production-ready mobile apps, ML systems, and practical full-stack solutions.">
+  <meta name="author" content="Thiraviaraj R">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thiraviaraj R | AI/ML Engineer &amp; Full-Stack Builder">
+  <meta property="og:description" content="Portfolio of Thiraviaraj R — 2nd-year B.E. CSE (AI &amp; ML) student at Rathinam Technical Campus (CGPA 9.46), CEH certified. Building production-ready mobile apps, ML systems, and practical software.">
+  <meta property="og:url" content="https://thiraviyarajr2007-dotcom.github.io/portfolio-2.0/">
+  <meta property="og:image" content="assets/images/profile.webp">
+  <meta property="og:site_name" content="Thiraviaraj R Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thiraviaraj R | AI/ML Engineer &amp; Full-Stack Builder">
+  <meta name="twitter:description" content="B.E. CSE (AI &amp; ML) student at Rathinam Technical Campus (CGPA 9.46), CEH certified. Focused on SWE, ML, and systems R&amp;D.">
+  <meta name="twitter:image" content="assets/images/profile.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.ico">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Zero-Flash Inline Theme Loader Script -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Person JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Thiraviaraj R",
+    "url": "https://thiraviyarajr2007-dotcom.github.io/portfolio-2.0/",
+    "image": "assets/images/profile.webp",
+    "jobTitle": "AI/ML Engineer & Full-stack Builder",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Rathinam Technical Campus",
+      "department": "Computer Science & Engineering (AI & ML)"
+    },
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Rathinam Technical Campus"
+    },
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Flutter",
+      "Firebase",
+      "Ethical Hacking",
+      "Python",
+      "Java",
+      "Web Development",
+      "Data Structures and Algorithms"
+    ],
+    "email": "mailto:thiraviyaraj2007@gmail.com",
+    "sameAs": [
+      "https://github.com/thiraviyarajr2007-dotcom",
+      "https://unstop.com/u/thirar57637",
+      "https://www.linkedin.com/in/thiraviaraj-rm-5b7478303"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Glass Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Thiraviaraj R Portfolio Home">
+        <span class="logo-text">Thiraviaraj<span class="accent-dot">.</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light theme" title="Toggle theme" type="button">
+          <svg class="theme-icon sun-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="nav-toggle" class="nav-toggle-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu" type="button">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- ========================================================== -->
+    <!-- 1. HERO SECTION                                            -->
+    <!-- ========================================================== -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-badge reveal-on-scroll">
+          <span class="status-indicator" aria-hidden="true"></span>
+          <span>Available for SWE &amp; ML Internships (Summer/Fall 2026)</span>
+        </div>
+
+        <p class="hero-greeting reveal-on-scroll">Hello, I'm</p>
+        <h1 class="hero-title reveal-on-scroll">Thiraviaraj R</h1>
+
+        <!-- Accessible Dynamic Role Rotator -->
+        <div class="hero-role-wrapper reveal-on-scroll" aria-label="Role specialization">
+          <span class="role-static">Specializing in </span>
+          <span class="role-rotator" id="role-rotator" aria-live="polite" aria-atomic="true" data-roles='["AI/ML Engineer", "Flutter & Firebase Developer", "Full-stack Builder"]'>AI/ML Engineer</span>
+        </div>
+
+        <p class="hero-tagline reveal-on-scroll">
+          Engineering high-performance mobile apps, machine learning pipelines, and robust full-stack software to solve tangible, real-world problems.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-actions reveal-on-scroll">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/resume.pdf" class="btn btn-secondary" download="Thiraviaraj_R_Resume.pdf">Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </div>
+
+        <!-- 4 Quantifiable Recruiter Metric Counters -->
+        <div class="hero-stats-grid reveal-on-scroll">
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="9.46" data-decimals="2">9.46</span>
+            </div>
+            <span class="stat-label">CGPA &bull; Rathinam Tech Campus</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="7">7</span><span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Projects Built</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-badge">CEH</span>
+            </div>
+            <span class="stat-label">Certified Ethical Hacker</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="9">9</span>
+            </div>
+            <span class="stat-label">Hackathons &amp; Competitions</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 2. ABOUT SECTION (Bento Grid)                              -->
+    <!-- ========================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Background, leadership &amp; engineering principles</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-bento-grid">
+          
+          <!-- Bento Tile 1: Profile Visual Slot -->
+          <div class="bento-card bento-card-visual reveal-on-scroll">
+            <div class="profile-image-frame">
+              <picture>
+                <source srcset="assets/images/profile.webp" type="image/webp">
+                <img src="assets/images/profile.webp" alt="Thiraviaraj R — B.E. CSE (AI &amp; ML) Student and Software Developer" width="600" height="900" loading="lazy" class="profile-img">
+              </picture>
+            </div>
+            <div class="profile-caption">
+              <span class="profile-name">Thiraviaraj R</span>
+              <span class="profile-role">2nd-Year B.E. CSE (AI &amp; ML)</span>
+            </div>
+          </div>
+
+          <!-- Bento Tile 2: Primary First-Person Narrative -->
+          <div class="bento-card bento-card-narrative reveal-on-scroll">
+            <h3 class="bento-card-title">Grounded Roots, Purposeful Engineering</h3>
+            <div class="narrative-body">
+              <p>
+                I was born and raised in Tirunelveli district, Tamil Nadu, coming from a hardworking farming family that taught me resilience, patience, and the value of grounded problem-solving. Serving as School Pupil Leader from 2022 to 2025 ingrained in me a deep sense of discipline, teamwork, and accountability.
+              </p>
+              <p>
+                Today, as a 2nd-year B.E. Computer Science and Engineering (AI &amp; ML) student at Rathinam Technical Campus, Coimbatore, I channel that same dedication into software engineering. I don't just write code for assignments—I build practical applications that bridge everyday community challenges with modern technology, from offline mesh file sharing to municipal transit trackers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bento Tile 3: Academic & Institutional Foundation -->
+          <div class="bento-card bento-card-academic reveal-on-scroll">
+            <h3 class="bento-card-title">Academic Rigor</h3>
+            <ul class="academic-details-list">
+              <li>
+                <span class="detail-label">Institution</span>
+                <span class="detail-value">Rathinam Technical Campus, Coimbatore</span>
+              </li>
+              <li>
+                <span class="detail-label">Degree</span>
+                <span class="detail-value">B.E. Computer Science &amp; Engineering (AI &amp; ML)</span>
+              </li>
+              <li>
+                <span class="detail-label">Academic Standing</span>
+                <span class="detail-value">2nd Year (2024–2028)</span>
+              </li>
+              <li>
+                <span class="detail-label">Academic Score</span>
+                <span class="detail-value highlight-score">CGPA 9.46 / 10.0</span>
+              </li>
+              <li>
+                <span class="detail-label">Target Roles</span>
+                <span class="detail-value">SWE, ML Systems &amp; R&amp;D Internships</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bento Tile 4: Core Engineering Philosophy -->
+          <div class="bento-card bento-card-philosophy reveal-on-scroll">
+            <h3 class="bento-card-title">Engineering Principles</h3>
+            <ul class="philosophy-list">
+              <li>
+                <strong>Consistent &amp; Structured Learning:</strong> Building foundational depth in data structures, algorithms, and core CS fundamentals rather than superficial syntax chasing.
+              </li>
+              <li>
+                <strong>Real-World Utility First:</strong> Prioritizing systems that perform under constrained connectivity, minimal latency, and intuitive accessibility.
+              </li>
+              <li>
+                <strong>Full-Cycle Execution:</strong> Owning products end-to-end—from system architecture and database design to cross-platform client development and AI integration.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bento Tile 5: Heritage & Leadership Pillars -->
+          <div class="bento-card bento-card-pillars reveal-on-scroll">
+            <h3 class="bento-card-title">Foundational Pillars</h3>
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <span class="pillar-icon" aria-hidden="true">🌱</span>
+                <div class="pillar-text">
+                  <strong>Farming Heritage</strong>
+                  <p>Instilling enduring work ethic, grit, and pragmatic problem-solving instincts.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-icon" aria-hidden="true">🎖️</span>
+                <div class="pillar-text">
+                  <strong>School Pupil Leader (2022–25)</strong>
+                  <p>Four consecutive years leading student governance and school-wide initiatives.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-icon" aria-hidden="true">🛡️</span>
+                <div class="pillar-text">
+                  <strong>Security-First Mindset</strong>
+                  <p>EC-Council CEH credentialed with proactive defensive architectural focus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 3. PROJECTS SECTION (Uniform Cards Grid)                   -->
+    <!-- ========================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Real-world applications &amp; intelligent systems</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <!-- Filter Chips Bar -->
+        <div class="project-filters reveal-on-scroll" role="toolbar" aria-label="Filter projects by category">
+          <button class="filter-chip active" data-filter="all" aria-pressed="true" type="button">All (7)</button>
+          <button class="filter-chip" data-filter="mobile" aria-pressed="false" type="button">Mobile (3)</button>
+          <button class="filter-chip" data-filter="web" aria-pressed="false" type="button">Web (4)</button>
+          <button class="filter-chip" data-filter="ai" aria-pressed="false" type="button">AI (4)</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1: Namma Nellai -->
+          <article class="project-card reveal-on-scroll" data-category="mobile">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-civic">
+                <img src="assets/projects/namma-nellai.webp" alt="Namma Nellai Civic App Interface" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Mobile App</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">Namma Nellai</h3>
+              </div>
+              <p class="project-summary">
+                Civic engagement and public transit utility app built for the citizens of Tirunelveli district.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">Flutter</span>
+                <span class="tech-chip">Firebase Auth</span>
+                <span class="tech-chip">Cloud Firestore</span>
+                <span class="tech-chip">Twilio API</span>
+                <span class="tech-chip">REST APIs</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Engineered localized multilingual interface with multi-provider authentication for district-wide public access.</li>
+                <li>Implemented live bus and train schedule lookup systems delivering real-time public transit information.</li>
+                <li>Integrated Twilio SMS gateways and cloud backend triggers for automated municipal notifications.</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://nammanellai.online" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>Live Demo</span>
+                  <svg class="external-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SwiftShare -->
+          <article class="project-card reveal-on-scroll" data-category="mobile">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-mesh">
+                <img src="assets/projects/swiftshare.webp" alt="SwiftShare Offline P2P Interface" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Mobile App</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">SwiftShare</h3>
+              </div>
+              <p class="project-summary">
+                High-speed, offline peer-to-peer file sharing mobile application operating over Wi-Fi Direct.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">Flutter</span>
+                <span class="tech-chip">Kotlin</span>
+                <span class="tech-chip">Android Wi-Fi P2P</span>
+                <span class="tech-chip">Platform Channels</span>
+                <span class="tech-chip">Socket I/O</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Built zero-internet file transfer protocol leveraging direct hardware peer discovery via Android Wi-Fi Direct.</li>
+                <li>Developed custom Flutter-to-Kotlin platform channels managing low-level socket streaming and chunked transfers.</li>
+                <li>Optimized packet buffer handling to maintain resilient, high-throughput connections across varied Android devices.</li>
+              </ul>
+              <div class="project-footer">
+                <!-- No URL specified: button strictly omitted -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: HabitAI -->
+          <article class="project-card reveal-on-scroll" data-category="web ai">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-ai">
+                <img src="assets/projects/habitai.webp" alt="HabitAI Behavioral Platform Dashboard" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Web &bull; AI</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">HabitAI</h3>
+              </div>
+              <p class="project-summary">
+                Smart habit tracking and behavioral analytics platform integrated with Google Gemini API.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">React</span>
+                <span class="tech-chip">Firebase</span>
+                <span class="tech-chip">Gemini API</span>
+                <span class="tech-chip">Firestore</span>
+                <span class="tech-chip">Chart.js</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Developed interactive streak visualization dashboards with real-time cloud data synchronization via Firestore.</li>
+                <li>Integrated Google Gemini API to analyze user consistency patterns and generate personalized accountability insights.</li>
+                <li>Implemented end-to-end secure user authentication and persistent personal preference storage.</li>
+              </ul>
+              <div class="project-footer">
+                <!-- No URL specified: button strictly omitted -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: AI Notes & Productivity App -->
+          <article class="project-card reveal-on-scroll" data-category="web ai">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-productivity">
+                <img src="assets/projects/ai-notes.webp" alt="AI Notes & Productivity App Interface" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Web &bull; AI</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">AI Notes &amp; Productivity App</h3>
+              </div>
+              <p class="project-summary">
+                Intelligent workspace for automated task prioritization, note synthesis, and agenda scheduling.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">HTML5 / CSS3</span>
+                <span class="tech-chip">Generative AI</span>
+                <span class="tech-chip">REST API</span>
+                <span class="tech-chip">LocalStorage</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Architected modular scheduling workflow with smart task categorization and automated deadline tracking.</li>
+                <li>Connected AI processing pipeline to extract actionable to-do items and key takeaways from raw study notes.</li>
+                <li>Created lightweight, keyboard-accessible responsive interface adhering to WCAG usability standards.</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/thiraviyarajr2007-dotcom/AI-Notes" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>GitHub Repository</span>
+                  <svg class="external-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Car Front Display GPS Tracker -->
+          <article class="project-card reveal-on-scroll" data-category="web mobile">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-telematics">
+                <img src="assets/projects/gps-tracker.webp" alt="Car Front Display GPS Tracker Telematics HUD" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Web &bull; Mobile</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">Car Front Display GPS Tracker</h3>
+              </div>
+              <p class="project-summary">
+                Real-time vehicle telematics dashboard and front-display navigation interface.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">Geolocation API</span>
+                <span class="tech-chip">Leaflet Maps</span>
+                <span class="tech-chip">WebSockets</span>
+                <span class="tech-chip">CSS HUD</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Engineered real-time coordinate streaming and dynamic map re-centering for live vehicle position tracking.</li>
+                <li>Designed high-contrast heads-up display (HUD) UI optimized for low distraction in driver-facing environments.</li>
+                <li>Implemented telemetry data parsing and speed threshold alerts using client-side mathematical projection.</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/thiraviyarajr2007-dotcom/gps-tracker" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                  <span>GitHub Repository</span>
+                  <svg class="external-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Road Safety Hackathon Project -->
+          <article class="project-card reveal-on-scroll" data-category="ai">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-safety">
+                <img src="assets/projects/road-safety.webp" alt="Road Hazard Risk Classification Dashboard" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Machine Learning</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">Road Hazard Risk Classifier</h3>
+              </div>
+              <p class="project-summary">
+                Machine learning risk classification model developed for IIT Madras National Road Safety Hackathon 2025.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Scikit-Learn</span>
+                <span class="tech-chip">Pandas</span>
+                <span class="tech-chip">NumPy</span>
+                <span class="tech-chip">Classification</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Analyzed traffic and incident datasets to construct predictive multi-factor hazard scoring models.</li>
+                <li>Built risk classification algorithms to automatically identify critical blackspots and accident-prone corridors.</li>
+                <li>Showcased prototype at IIT Madras, demonstrating proactive telemetry alerting for municipal transport boards.</li>
+              </ul>
+              <div class="project-footer">
+                <!-- No URL specified: button strictly omitted -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: Medicine Identification & Chemistry Learning Platform -->
+          <article class="project-card reveal-on-scroll" data-category="web ai">
+            <div class="project-card-visual">
+              <div class="project-cover-gradient gradient-chemistry">
+                <img src="assets/projects/medicine-chem-platform.webp" alt="Medicine Identification & Chemistry Platform UI" loading="lazy" class="project-screenshot" onerror="this.style.display='none'">
+                <div class="project-badge">Web &bull; AI</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div class="project-card-header">
+                <h3 class="project-title">Medicine Identification Platform</h3>
+              </div>
+              <p class="project-summary">
+                Comprehensive chemical properties query engine linked to automated therapeutic identification.
+              </p>
+              <div class="project-tech-chips">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Web Framework</span>
+                <span class="tech-chip">Chemical Informatics</span>
+                <span class="tech-chip">Pandas</span>
+                <span class="tech-chip">REST API</span>
+              </div>
+              <ul class="project-bullets">
+                <li>Structured relational chemical database enabling multi-parameter querying across molecular formulas and compounds.</li>
+                <li>Developed cross-reference search linking commercial pharmaceutical formulations to active chemical agents.</li>
+                <li>Designed interactive visualization modules for STEM students exploring pharmacology and organic chemistry structures.</li>
+              </ul>
+              <div class="project-footer">
+                <!-- No URL specified: button strictly omitted -->
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================================== -->
+          <!-- PROJECT REPOSITORY: Add new project cards above following this uniform schema -->
+          <!-- ========================================================================== -->
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 4. SKILLS SECTION (Grouped Bento Chips Only)               -->
+    <!-- ========================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Proficiencies across software engineering, machine learning &amp; systems</span>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+
+        <div class="skills-bento-grid">
+
+          <!-- Skill Group 1: Programming Languages -->
+          <div class="skill-group-card reveal-on-scroll">
+            <div class="skill-group-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-group-title">Programming Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">Java</span>
+              <span class="skill-chip">C</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 2: App & Web Development -->
+          <div class="skill-group-card reveal-on-scroll">
+            <div class="skill-group-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3 class="skill-group-title">App &amp; Web Development</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Flutter</span>
+              <span class="skill-chip">Kotlin</span>
+              <span class="skill-chip">Firebase (Auth, Firestore)</span>
+              <span class="skill-chip">React</span>
+              <span class="skill-chip">Node.js REST APIs</span>
+              <span class="skill-chip">Responsive Web Design</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 3: Data & Machine Learning -->
+          <div class="skill-group-card reveal-on-scroll">
+            <div class="skill-group-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3 class="skill-group-title">Data &amp; Machine Learning</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Pandas</span>
+              <span class="skill-chip">NumPy</span>
+              <span class="skill-chip">Matplotlib</span>
+              <span class="skill-chip">ML Fundamentals</span>
+              <span class="skill-chip">Deep Learning</span>
+              <span class="skill-chip">Generative AI (Gemini API)</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 4: Cybersecurity & Systems -->
+          <div class="skill-group-card reveal-on-scroll">
+            <div class="skill-group-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3 class="skill-group-title">Cybersecurity &amp; Systems</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Ethical Hacking (CEH)</span>
+              <span class="skill-chip">Secure Auth Design</span>
+              <span class="skill-chip">Penetration Testing Basics</span>
+              <span class="skill-chip">Vulnerability Assessment</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 5: Developer Tools & Platforms -->
+          <div class="skill-group-card reveal-on-scroll">
+            <div class="skill-group-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3 class="skill-group-title">Developer Tools &amp; Platforms</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">VS Code</span>
+              <span class="skill-chip">Android Studio</span>
+              <span class="skill-chip">Google Colab</span>
+              <span class="skill-chip">Jupyter Notebook</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 6: Core Computer Science -->
+          <div class="skill-group-card reveal-on-scroll">
+            <div class="skill-group-header">
+              <div class="skill-icon-wrapper" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <h3 class="skill-group-title">Core Computer Science</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Data Structures &amp; Algorithms (DSA)</span>
+              <span class="skill-chip">Object-Oriented Programming (OOP)</span>
+              <span class="skill-chip">Problem Solving</span>
+              <span class="skill-chip">Database Management (DBMS)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 5. ACHIEVEMENTS SECTION (9 Hackathons & Competitions)       -->
+    <!-- ========================================================== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Competitive hackathons, national technical challenges &amp; quizzes</span>
+          <h2 class="section-title">Hackathons &amp; Competitions</h2>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Achievement 1: Samsung Solve for Tomorrow 2026 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">🏆</div>
+              <span class="achievement-badge badge-primary">Applicant / Participant (2026)</span>
+            </div>
+            <h3 class="achievement-title">Samsung Solve for Tomorrow 2026</h3>
+            <p class="achievement-organizer">Samsung India &amp; Ministry of Electronics and IT (MeitY)</p>
+            <p class="achievement-description">
+              National youth innovation challenge proposing STEM and AI-driven technology solutions to solve critical community problems.
+            </p>
+          </div>
+
+          <!-- Achievement 2: National Road Safety Hackathon 2025 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">🚗</div>
+              <span class="achievement-badge">National Participant</span>
+            </div>
+            <h3 class="achievement-title">National Road Safety Hackathon 2025</h3>
+            <p class="achievement-organizer">Indian Institute of Technology (IIT), Madras</p>
+            <p class="achievement-description">
+              Represented Rathinam Technical Campus developing machine learning risk classification algorithms for real-time roadway hazard detection.
+            </p>
+          </div>
+
+          <!-- Achievement 3: GameTrade Hackathon -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">🎮</div>
+              <span class="achievement-badge">Phase 1 Participant</span>
+            </div>
+            <h3 class="achievement-title">GameTrade Hackathon</h3>
+            <p class="achievement-organizer">Indian Institute of Technology (IIT), Madras</p>
+            <p class="achievement-description">
+              Formulated system architectural concept and complete interactive storyboard in Phase 1 for next-generation trading platforms.
+            </p>
+          </div>
+
+          <!-- Achievement 4: StratQuest -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">🎯</div>
+              <span class="achievement-badge">Collegiate Participant</span>
+            </div>
+            <h3 class="achievement-title">StratQuest</h3>
+            <p class="achievement-organizer">Indian Institute of Technology (IIT), Kharagpur</p>
+            <p class="achievement-description">
+              Collaborative strategic analysis hackathon tackling complex institutional operational challenges representing Rathinam Technical Campus.
+            </p>
+          </div>
+
+          <!-- Achievement 5: Equity Research Challenge 2025-26 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">📊</div>
+              <span class="achievement-badge">Participant</span>
+            </div>
+            <h3 class="achievement-title">Equity Research Challenge 2025-26</h3>
+            <p class="achievement-organizer">Indian Institute of Technology (IIT), Guwahati</p>
+            <p class="achievement-description">
+              Quantitative equity valuation and market research challenge analyzing financial statements and statistical modeling.
+            </p>
+          </div>
+
+          <!-- Achievement 6: Central India Hackathon 3.0 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">💻</div>
+              <span class="achievement-badge badge-team">Team Hacker's Squad</span>
+            </div>
+            <h3 class="achievement-title">Central India Hackathon 3.0</h3>
+            <p class="achievement-organizer">Suryodaya College of Engineering &amp; Technology, Nagpur</p>
+            <p class="achievement-description">
+              Developed a full-stack software prototype under 36-hour sprint constraints with team 'Hacker's Squad' on Unstop.
+            </p>
+          </div>
+
+          <!-- Achievement 7: TATA Crucible Campus Quiz 2025 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">💡</div>
+              <span class="achievement-badge">Campus Participant</span>
+            </div>
+            <h3 class="achievement-title">TATA Crucible Campus Quiz 2025</h3>
+            <p class="achievement-organizer">The Tata Group</p>
+            <p class="achievement-description">
+              Competed in premier national collegiate business, economy, and technological innovation quiz challenge.
+            </p>
+          </div>
+
+          <!-- Achievement 8: Smart Motion Hackathon 2.0 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">⚡</div>
+              <span class="achievement-badge">Participant</span>
+            </div>
+            <h3 class="achievement-title">Smart Motion Hackathon 2.0</h3>
+            <p class="achievement-organizer">Chennai Institute of Technology (CIT), Chennai</p>
+            <p class="achievement-description">
+              Engineered software and sensor-driven motion control mechanisms targeting modern smart mobility systems.
+            </p>
+          </div>
+
+          <!-- Achievement 9: Odoo x Adani University Hackathon '26 -->
+          <div class="achievement-card reveal-on-scroll">
+            <div class="achievement-header">
+              <div class="achievement-icon" aria-hidden="true">🚀</div>
+              <span class="achievement-badge">Participant</span>
+            </div>
+            <h3 class="achievement-title">Odoo x Adani University Hackathon '26</h3>
+            <p class="achievement-organizer">Adani University &amp; Odoo</p>
+            <p class="achievement-description">
+              Rapid enterprise workflow prototyping and customized business application integration challenge.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 6. CERTIFICATIONS SECTION (Timeline)                       -->
+    <!-- ========================================================== -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Continuous professional credentialing &amp; specialized competencies</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+
+        <div class="certifications-timeline">
+
+          <!-- Certification 1: CEH (Featured / Flagship) -->
+          <div class="timeline-item timeline-featured reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">EC-Council</span>
+                <span class="credential-tag badge-gold">Featured Credential</span>
+              </div>
+              <h3 class="credential-title">Certified Ethical Hacker (CEH)</h3>
+              <p class="credential-summary">
+                Comprehensive professional accreditation covering threat reconnaissance, vulnerability analysis, perimeter defense, and defensive security architectures.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">Network Defense</span>
+                <span class="skill-chip">Threat Identification</span>
+                <span class="skill-chip">Vulnerability Assessment</span>
+                <span class="skill-chip">Ethical Hacking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 2: IBM Generative AI 2025 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">IBM SkillsBuild &bull; 2025</span>
+              </div>
+              <h3 class="credential-title">Use Generative AI for Software Development</h3>
+              <p class="credential-summary">
+                Applied Generative AI workflows in modern SDLC: automated unit testing, synthetic code generation, prompt engineering, and intelligent refactoring.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">Generative AI</span>
+                <span class="skill-chip">Prompt Engineering</span>
+                <span class="skill-chip">AI Code Review</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 3: Scaler MLOps Nov 2025 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">Scaler &bull; Nov 2025</span>
+              </div>
+              <h3 class="credential-title">MLOps Fundamentals</h3>
+              <p class="credential-summary">
+                Foundations of deploying machine learning models into production: continuous integration, model lifecycle management, monitoring, and automated pipelines.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">ML Pipelines</span>
+                <span class="skill-chip">Model Lifecycle</span>
+                <span class="skill-chip">Production Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 4: Google UX Design -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">Google &bull; Coursera</span>
+              </div>
+              <h3 class="credential-title">Google UX Design Professional Certificate</h3>
+              <p class="credential-summary">
+                Human-centered product design methodology: user research, empathetic persona mapping, responsive wireframing, high-fidelity Figma prototyping, and usability audits.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">UX Research</span>
+                <span class="skill-chip">Wireframing</span>
+                <span class="skill-chip">WCAG Accessibility</span>
+                <span class="skill-chip">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 5: ML with Python -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">LinkedIn Learning</span>
+              </div>
+              <h3 class="credential-title">Machine Learning with Python</h3>
+              <p class="credential-summary">
+                Practical implementation of supervised and unsupervised machine learning algorithms using Python, NumPy, Pandas, and Scikit-learn.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">Scikit-learn</span>
+                <span class="skill-chip">Regression</span>
+                <span class="skill-chip">Classification</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 6: Deep Learning Optimization -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">LinkedIn Learning</span>
+              </div>
+              <h3 class="credential-title">Deep Learning Optimization</h3>
+              <p class="credential-summary">
+                Advanced neural network performance tuning: loss function optimization, hyperparameter exploration, batch normalization, and gradient descent stability.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">Neural Networks</span>
+                <span class="skill-chip">Gradient Descent</span>
+                <span class="skill-chip">Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 7: Cybersecurity Threat Landscape -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">LinkedIn Learning</span>
+              </div>
+              <h3 class="credential-title">Cybersecurity Threat Landscape</h3>
+              <p class="credential-summary">
+                Analysis of emerging global cyber threats, vector analysis, malware payloads, social engineering vectors, and zero-trust defensive architecture.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">Threat Modeling</span>
+                <span class="skill-chip">Malware Vectors</span>
+                <span class="skill-chip">Defensive Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 8: Joy of Computing using Python -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <span class="credential-issuer">NPTEL &bull; IIT Madras</span>
+              </div>
+              <h3 class="credential-title">The Joy of Computing using Python</h3>
+              <p class="credential-summary">
+                Fundamental computational thinking, algorithmic design patterns, mathematical logic, and robust problem-solving in Python.
+              </p>
+              <div class="credential-skills">
+                <span class="skill-chip">Python Programming</span>
+                <span class="skill-chip">Algorithms</span>
+                <span class="skill-chip">Computational Thinking</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 7. CONTACT SECTION                                         -->
+    <!-- ========================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Let's build something impactful together</span>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- Left Panel: Connection Info -->
+          <div class="contact-info-panel reveal-on-scroll">
+            <h3 class="contact-panel-title">Let's Connect</h3>
+            <p class="contact-panel-desc">
+              I am actively looking for SWE, ML, and systems R&amp;D internship opportunities (Summer/Fall 2026). Whether you have a challenging technical problem, a collaboration idea, or an internship role, my inbox is always open.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="detail-name">Email</span>
+                  <a href="mailto:thiraviyaraj2007@gmail.com" class="contact-link">thiraviyaraj2007@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="detail-name">Location</span>
+                  <span class="contact-text">Coimbatore / Tirunelveli, Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links-wrapper">
+              <span class="social-heading">Profiles &amp; Repositories</span>
+              <div class="social-links">
+                <!-- GitHub -->
+                <a href="https://github.com/thiraviyarajr2007-dotcom" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+
+                <!-- Unstop -->
+                <a href="https://unstop.com/u/thirar57637" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Unstop Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                </a>
+
+                <!-- LinkedIn (TODO Placeholder Indicator) -->
+                <!-- TODO: User can update handle if custom slug changes -->
+                <a href="https://www.linkedin.com/in/thiraviaraj-rm-5b7478303" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+
+                <!-- LeetCode (TODO Placeholder Indicator) -->
+                <!-- TODO: Replace with user's verified LeetCode profile handle when configured -->
+                <a href="https://leetcode.com/u/thiraviaraj" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LeetCode Profile (TODO: Add custom handle)">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .349 1.017 5.938 5.938 0 0 0 .481.844l.03.044.043.052c.11.13.23.25.36.365.12.11.25.21.38.3.14.09.28.17.43.24.15.06.3.12.46.16.15.04.31.07.47.09.16.02.32.03.48.03.17 0 .33-.01.5-.03.16-.02.32-.05.47-.09.16-.04.31-.1.46-.16.15-.07.29-.15.43-.24.13-.09.26-.19.38-.3.13-.11.25-.23.36-.36l.04-.05.03-.04a5.94 5.94 0 0 0 .48-.84 5.87 5.87 0 0 0 .35-1.02 5.53 5.53 0 0 0 .06-2.36 5.35 5.35 0 0 0-.12-.51 5.27 5.27 0 0 0-1.21-2.11L10.5 4.35 14.444.438A1.374 1.374 0 0 0 13.483 0zm-2.82 8.082l2.82 2.82-5.64 5.64-2.82-2.82 5.64-5.64z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Panel: Message Form -->
+          <div class="contact-form-panel reveal-on-scroll">
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+              
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Chen" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Summer 2026 Internship Opportunity">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Share project details, opportunity specs, or inquiries..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <svg class="btn-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                     -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">Thiraviaraj R</span>
+        <p class="footer-tagline">Building disciplined software for real-world utility.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="footer-meta">
+        <p>&copy; 2026 Thiraviaraj R. Handcrafted with semantic HTML5, CSS3, and vanilla JS. Zero external build tools.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js" defer></script>
+</body>
+</html>

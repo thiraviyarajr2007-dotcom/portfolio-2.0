@@ -1,0 +1,55 @@
+--- a/script.js
++++ b/script.js
+@@ -421,24 +421,43 @@
+       if (e.key === 'Tab' || e.keyCode === 9) {
+         var focusables = getFocusableElements();
+         if (focusables.length === 0) {
+           e.preventDefault();
++          if (navToggle && typeof navToggle.focus === 'function') {
++            navToggle.focus();
++          }
+           return;
+         }
+ 
+-        var ring = [navToggle].concat(focusables);
+-        var first = ring[0];
+-        var last = ring[ring.length - 1];
++        var ring = focusables.concat([navToggle]);
++        var firstLink = focusables[0];
++        var lastLink = focusables[focusables.length - 1];
++
++        // Recapture focus if it has drifted outside the modal drawer
++        if (ring.indexOf(document.activeElement) === -1) {
++          e.preventDefault();
++          if (firstLink && typeof firstLink.focus === 'function') {
++            firstLink.focus();
++          } else if (navToggle && typeof navToggle.focus === 'function') {
++            navToggle.focus();
++          }
++          return;
++        }
+ 
+         if (e.shiftKey) {
+-          if (document.activeElement === first) {
++          // Backward navigation (Shift + Tab)
++          if (document.activeElement === firstLink) {
+             e.preventDefault();
+-            last.focus();
++            navToggle.focus();
++          } else if (document.activeElement === navToggle) {
++            e.preventDefault();
++            lastLink.focus();
+           }
+         } else {
+-          if (document.activeElement === last) {
++          // Forward navigation (Tab)
++          if (document.activeElement === navToggle) {
+             e.preventDefault();
+-            first.focus();
++            firstLink.focus();
++          } else if (document.activeElement === lastLink) {
++            e.preventDefault();
++            navToggle.focus();
+           }
+         }
+       }
